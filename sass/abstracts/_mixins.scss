@@ -1,0 +1,85 @@
+@mixin grid-center-1 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin grid-center-2 {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+@mixin grid-center-3 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+@mixin grid-center-4 {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+@mixin grid-center-5 {
+  display: grid;
+  align-items: center;
+}
+
+@mixin grid-center-6 {
+  display: grid;
+  justify-items: center;
+}
+
+@mixin grid-center-7 {
+  display: grid;
+  align-content: center;
+}
+
+@mixin grid-center-8 {
+  display: grid;
+  justify-content: center;
+}
+
+@mixin hover-active-up {
+  
+  transition: $transition-1;
+
+  &:hover,
+  &:active {
+    transform: translateY(-.15rem);
+  }
+}
+
+@mixin hover-active-right {
+  
+  transition: $transition-1;
+
+  &:hover,
+  &:active {
+    transform: translateX(.15rem);
+  }
+}
+
+@mixin hov-under {
+
+  &::after {
+    content: "";
+    display: block;
+    height: 0.15rem;
+    background-color: $color-green;
+    margin-top: -.15rem;
+    width: 0;
+    opacity: 0;
+    // transform-origin: left;
+    // transform: scaleX(0);
+    transition: all .5s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+    opacity: 1;
+    // transform: scaleX(1);
+  }
+}

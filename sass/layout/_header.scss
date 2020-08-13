@@ -1,0 +1,10 @@
+.header {
+  grid-column: full-start / full-end;
+  grid-row: 2 / 3;
+  -webkit-clip-path: polygon(100% 0, 100% 55%, 69% 100%, 6% 79%, 0 0);
+  clip-path: polygon(100% 0, 100% 55%, 69% 100%, 6% 79%, 0 0);
+  background-image: linear-gradient(to right bottom, rgba($color-green-light, .5), rgba($color-green-dark, .5)), url(../img/spaceweb-header.jpg);
+  background-size: cover;
+  background-position: center;
+  @include grid-center-4;
+}

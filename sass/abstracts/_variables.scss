@@ -1,0 +1,76 @@
+// COLORS
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey-primary: #666;
+$color-grey-dark-2: #333;
+$color-grey-dark-3: #171717;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #9599a1;
+
+$color-green-light: #61ccb0;
+$color-green-dark: #256e7d;
+
+$color-orange-light: #f29e02;
+$color-orange-dark: #f75002;
+
+$color-blue-dark-1: #374059;
+$color-blue-dark-2: #353e56;
+$color-blue-dark-3: #20292f;
+
+$color-purple: #9266cc;
+$color-tirquize-dark: #2d688f;
+
+
+// FONTS
+
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+
+$font-size-1: 1.4rem;
+
+
+$fw-100: 100;
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+$fw-900: 900;
+
+$line-height-1: 1;
+$line-height-2: 1.4;
+$line-height-3: 1.7;
+
+// TEXT-SHADOWS
+
+$text-shadow-1: .2rem .2rem .2rem $color-black;
+// $text-shadow-2: 0 .1rem .2rem $color-grey-light-1;
+
+
+// BOX-SHADOWS
+
+$bx-sw-1: 0 .7rem 1.1rem rgba($color-black, .1);
+$bx-sw-2: 0 1rem 2rem rgba($color-black, .3);
+$bx-sw-3: 0 .5rem 1rem rgba($color-black, .2);
+$bx-sw-4: 0 3rem 6rem rgba($color-black, .1);
+$bx-sw-5: 0 1rem 1rem 1rem rgba($color-black, .3);
+  // X-osa Y-osa blur spread rgba(boja, opacity);
+
+// TRANSITIONS
+
+$transition-1: all .2s;
+$transition-2: all .5s;
+
+// BREAKPOINTS
+
+$bp-1: 82.5em; // 1320px
+$bp-2: 75em; // 1200px
+$bp-3: 58.75em; // 940px
+$bp-4: 51.75em; // 828px
+$bp-5: 51.5em; // 824px
+$bp-6: 40em; // 640px
+$bp-7: 30.25em; // 484px

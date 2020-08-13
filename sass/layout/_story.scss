@@ -1,0 +1,12 @@
+.story {
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 5rem;
+  margin-top: 5rem;
+  width: 70%;
+
+  @media only screen and (max-width: $bp-3) {
+    width: 100%;
+  }
+}

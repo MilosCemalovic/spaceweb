@@ -1,0 +1,64 @@
+.footer {
+  &__1 {
+    background-color: $color-green-dark;
+    grid-column: full-start / full-end;
+    grid-row: 6 / 7;
+    margin-top: -45vh;
+
+    @media only screen and (max-width:$bp-2) {
+      margin-top: -55vh;
+    }
+  }
+  
+  &__2 {
+    grid-column: center-start / center-end;
+    grid-row: 6 / 7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    grid-gap: 7rem;
+    padding-bottom: 5rem;
+
+    @media only screen and (max-width:$bp-2) {
+      margin-top: -10rem;
+    }
+
+    @media only screen and (max-width: $bp-6) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); 
+      justify-items: center;
+    }
+  }
+
+  &__content {
+    color: $color-grey-light-1; 
+    display: grid;
+    row-gap: 2rem;
+
+    @media only screen and (max-width: $bp-6) {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      grid-gap: 3rem;
+      width: 50%;
+    }
+  }
+
+  &__link {
+    justify-self: start;
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+    text-decoration: none;
+
+    @include hover-active-right;
+
+    @media only screen and (max-width: $bp-6) {
+      margin-left: 5rem;
+    }
+  }
+
+  &__nav-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 1rem;
+    fill: $color-green-light;
+  }
+}

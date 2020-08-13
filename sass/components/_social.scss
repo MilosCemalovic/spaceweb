@@ -1,0 +1,19 @@
+.social {
+  grid-column: 1 / -1;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+  grid-gap: 2rem;
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+  
+    @include hover-active-up;
+
+    @media only screen and (max-width: $bp-6) {
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.par {
+
+  line-height: $line-height-3;  
+
+  &--green {
+    color: $color-green-light;
+  }
+
+  &--white {
+    color: $color-grey-light-1;
+  }
+}

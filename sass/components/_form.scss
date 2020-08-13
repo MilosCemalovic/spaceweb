@@ -1,0 +1,62 @@
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  margin-right: 2rem;
+
+  @media only screen and (max-width: $bp-6) {
+    margin: 0;
+  }
+
+  &__input {
+    border: none;
+    background-color: $color-grey-light-1;
+    padding: 1rem 1.5rem;
+    width: 20vw;
+    transition: $transition-1;
+
+    @media only screen and (max-width: $bp-3) {
+      padding: .8rem 1rem;
+      width: 15vw;
+    }
+
+    @media only screen and (max-width: $bp-6) {
+      width: 55vw;
+    }
+
+    &::placeholder {
+      color: $color-green-dark;
+      font-size: 1.5rem;
+
+      @media only screen and (max-width: $bp-3) {
+        font-size: 1.2rem;
+      }
+    }
+
+    &:focus {
+      width: 22vw;
+
+      @media only screen and (max-width: $bp-6) {
+        width: 65vw;
+      }
+    }
+  }
+
+  &__btn {
+    border: none;
+    background-color: $color-grey-light-1;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 1.7rem;
+    height: 1.7rem;
+    fill: $color-green-dark;
+    margin-right: 1rem;
+
+    @media only screen and (max-width: $bp-3) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+}

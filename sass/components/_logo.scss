@@ -1,0 +1,28 @@
+.logo {  
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    animation: moveInLeft 1.5s;
+    transition: $transition-1;
+    margin-left: 3rem;
+
+    @media only screen and (max-width: $bp-6) {
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+
+    &:hover,
+    &:active {
+      border-radius: 50%;
+      box-shadow: $bx-sw-2;
+      transform: scale(1.05);
+    }
+
+    &:focus {
+      box-shadow: $bx-sw-1;
+      transform: scale(1);
+    }
+  }
+
+}

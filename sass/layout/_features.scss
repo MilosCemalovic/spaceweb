@@ -1,0 +1,97 @@
+.features {
+  &__1 {
+    background-color: $color-green-light;
+    grid-column: full-start / full-end;
+    grid-row: 5 / 6;
+    -webkit-clip-path: polygon(24% 21%, 76% 13%, 100% 0, 100% 83%, 0 100%, 0% 50%);
+    clip-path: polygon(24% 21%, 76% 13%, 100% 0, 100% 83%, 0 100%, 0% 50%);
+    margin-top: -45rem;
+
+    @media only screen and (max-width: $bp-5) {
+      margin-top: -30rem;
+    }
+
+    @media only screen and (max-width: $bp-6) {
+      -webkit-clip-path: polygon(44% 18%, 63% 13%, 100% 8%, 100% 85%, 0 100%, 0 22%);
+      clip-path: polygon(44% 18%, 63% 13%, 100% 8%, 100% 85%, 0 100%, 0 22%);
+      margin-top: -35rem;
+    }
+  }
+  
+  &__2 {
+    grid-column: center-start / center-end;
+    grid-row: 5 / 6;
+    z-index: 2;
+    margin: 15rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    padding-bottom: 15rem;
+    transition: $transition-2;
+
+    @media only screen and (max-width: $bp-6) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+  }
+
+  &__box-icon {
+    width: 10rem;
+    height: 10rem;
+    background-color: $color-grey-light-1;
+    border-radius: 50%;
+    @include grid-center-1;
+    margin-bottom: 3rem;
+    transition: $transition-2;
+
+    &--1 {
+      // animation: light-on-off 3s;
+      animation: light-on-off 5s infinite;
+    }
+
+    &--3 {
+      // animation: moveInRight-2 3s .5s;
+      animation: moveInRight-2 5s 2s infinite;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &__icon {
+    width: 6rem;
+    height: 6rem;
+    fill: $color-green-light;
+
+    &--1 {
+      // animation: light-on-off 3s;
+      animation: light-on-off 5s infinite;
+    }
+
+    &--2 {
+      // animation: moveInBottom-2 1.5s 2.5s;
+      animation: moveInBottom-2 5s 2.5s infinite;
+    }
+  }
+}
+
+
+// .features__2:hover .features__content .features__box-icon {
+
+//   &--1 {
+//     animation: light-on-off 3s;
+//   }
+
+//   &--3 {
+//     animation: moveInRight-2 3s .5s;
+//     animation-fill-mode: backwards;
+//   }
+// }
+
+// .features__2:hover .features__content .features__box-icon--1 .features__icon--1 {
+
+//   &--1 {
+//     animation: light-on-off 3s;
+//   }
+
+//   &--2 {
+//     animation: moveInBottom-2 1.5s 2.5s;
+//   }
+// }

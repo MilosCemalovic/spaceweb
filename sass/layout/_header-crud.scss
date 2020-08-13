@@ -1,0 +1,49 @@
+.header-crud {
+  grid-column: full-start / full-end;
+  grid-row: 2 / 3;
+  align-self: start;
+  margin: 3rem;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+
+  @media only screen and (max-width: $bp-6) {
+    grid-template-columns: 1fr;
+    // grid-template-rows: repeat(2, min-content);
+    row-gap: 2rem;
+    justify-items: center;
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 10rem);
+    margin-left: 4rem;
+
+    @media only screen and (max-width: $bp-6) {
+      margin: 0;
+      justify-items: center;
+    }
+  }
+
+  &__link {
+    font-family: $font-primary;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-grey-light-1;
+    font-weight: $fw-700;
+
+    @media only screen and (max-width: $bp-3) {
+      font-size: 1.2rem;
+    }
+
+    &:hover,
+    &:active {
+      color: rgba($color-grey-light-1, .8);
+    }
+  }
+
+}
