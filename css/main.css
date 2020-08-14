@@ -181,6 +181,7 @@ body {
   display: grid;
   grid-template-rows: 5rem calc(100vh - 5rem) repeat(4, min-content);
   grid-template-columns: [full-start] minmax(10rem, 1fr) [center-start] repeat(4, minmax(min-content, 25rem)) [center-end] minmax(10rem, 1fr) [full-end];
+  overflow: hidden;
 }
 
 ::selection {
@@ -488,7 +489,6 @@ body {
   grid-gap: 5rem;
   padding-bottom: 15rem;
   transition: all 0.5s;
-  overflow: hidden;
 }
 
 @media only screen and (max-width: 40em) {

@@ -28,7 +28,6 @@
     grid-gap: 5rem;
     padding-bottom: 15rem;
     transition: $transition-2;
-    overflow: hidden;
 
     @media only screen and (max-width: $bp-6) {
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
