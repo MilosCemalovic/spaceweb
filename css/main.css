@@ -366,6 +366,7 @@ body {
 
 .form__input:focus {
   width: 22vw;
+  outline: none;
 }
 
 @media only screen and (max-width: 40em) {
