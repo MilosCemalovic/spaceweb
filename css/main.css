@@ -441,14 +441,39 @@ body {
   grid-gap: 2rem;
 }
 
-.social__icon {
-  width: 3rem;
-  height: 3rem;
+.social__link {
   transition: all 0.2s;
 }
 
-.social__icon:hover, .social__icon:active {
+.social__link:hover, .social__link:active {
   transform: translateY(-0.15rem);
+}
+
+.social__cv {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 .5rem -.2rem;
+}
+
+@media only screen and (max-width: 40em) {
+  .social__cv {
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: 1.2rem;
+  }
+}
+
+.social__icon {
+  width: 3rem;
+  height: 3rem;
 }
 
 @media only screen and (max-width: 40em) {
@@ -597,7 +622,7 @@ body {
 
 @media only screen and (max-width: 40em) {
   .footer__link {
-    margin-left: 5rem;
+    margin-left: 4rem;
   }
 }
 

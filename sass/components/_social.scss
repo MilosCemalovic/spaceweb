@@ -5,11 +5,31 @@
   grid-template-columns: repeat(5, min-content);
   grid-gap: 2rem;
 
+  &__link {
+    @include hover-active-up;
+  }
+
+  &__cv {
+    text-decoration: none;
+    background-color: $color-black;
+    color: $color-white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    @include grid-center-1;
+    margin: 0 0 .5rem -.2rem;
+
+    @media only screen and (max-width: $bp-6) {
+      width: 2.3rem;
+      height: 2.3rem;
+      font-size: 1.2rem;
+    }
+  } 
+
   &__icon {
     width: 3rem;
     height: 3rem;
-  
-    @include hover-active-up;
 
     @media only screen and (max-width: $bp-6) {
       width: 2.3rem;
