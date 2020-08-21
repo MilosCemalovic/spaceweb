@@ -73,78 +73,195 @@
 
   <header id="top" class="header">
 
-    <h3 id="about" class="heading-3 heading-3--header">Spaceweb</h3>
-
-    <h4 class="heading-4 heading-4--header">Web site design template</h4>
-
-    <button class="btn btn--header">Read more</button>
-
+    <h3 id="about" class="heading-3 heading-3--header">Read page</h3>
+  
+    <h4 class="heading-4 heading-4--header">Database output fields</h4>
+  
+    <a href="#products" class="btn btn--header btn--header-create-page">Try it</a>
+  
   </header>
 
   <nav class="header-crud">
 
     <ul class="header-crud__list">
-
+  
       <li class="header-crud__item">
         <a href="create-page.html" class="header-crud__link">Create</a>
       </li>
-
+  
       <li class="header-crud__item">
         <a href="read-page.html" class="header-crud__link">Read</a>
       </li>
-
+  
       <li class="header-crud__item">
-        <a href="" class="header-crud__link">Update</a>
+        <a href="#" class="header-crud__link">Update</a>
       </li>
-
+  
       <li class="header-crud__item">
-        <a href="" class="header-crud__link">Delete</a>
+        <a href="#" class="header-crud__link">Delete</a>
       </li>
     </ul>
-
+  
     <form action="#" class="form">
-
+  
       <input type="text" class="form__input" placeholder="Search">
-
+  
       <button class="form__btn">
         <svg class="form__icon">
           <use xlink:href="img/sprite.svg#icon-search-2"></use>
         </svg>
       </button>
-
+  
     </form>
   </nav>
 
-  <section id="products" class="story">
+  <form action="#" method="post" id="products" class="form-create-page">
 
-    <div class="story__content">
+    <!-- <h5 class="heading-5 heading-5--green" style="grid-column:1/-1;">
+      <?php if(array_key_exists('fullname', $errors)) echo $errors['fullname'] ?>
+    </h5>
+    <h5 class="heading-5 heading-5--green" style="grid-column:1/-1;">
+      <?php if(array_key_exists('email', $errors)) echo $errors['email'] ?>
+    </h5>
+    <h5 class="heading-5 heading-5--green" style="grid-column:1/-1;">
+      <?php if(array_key_exists('phone', $errors)) echo $errors['phone'] ?>
+    </h5>
+    <h5 class="heading-5 heading-5--green" style="grid-column:1/-1;">
+      <?php if(array_key_exists('skills', $errors)) echo $errors['skills'] ?>
+    </h5>
+    <h5 class="heading-5 heading-5--green" style="grid-column:1/-1;">
+      <?php if(array_key_exists('opinion', $errors)) echo $errors['opinion'] ?>
+    </h5>
+    <h5 class="heading-5 heading-5--green" style="grid-column:1/-1;">
+      <?php if(array_key_exists('developer', $errors)) echo $errors['developer'] ?>
+    </h5>
+    <h5 class="heading-5 heading-5--green" style="grid-column:1/-1;">
+      <?php if(array_key_exists('letter', $errors)) echo $errors['letter'] ?>
+    </h5> -->
+    
+    <h5 class="heading-5 heading-5--green heading-5--create-page">
+      Single Database Output
+    </h5>
+  
+    <select class="form-create-page__select" name="opinion">
+      <option class="form-create-page__option">User Full Name</option>
+  
+      <option class="form-create-page__option">
+        Please insert database to see output
+      </option>
+    
+    </select>
+  
+    <select class="form-create-page__select" name="opinion">
+      <option class="form-create-page__option">User Email</option>
+  
+      <option class="form-create-page__option">
+        Please insert database to see output
+      </option>
+  
+    </select>
+    
+    <select class="form-create-page__select" name="opinion">
+      <option class="form-create-page__option">User Phone</option>
+  
+      <option class="form-create-page__option">
+        Please insert database to see output
+      </option>
+  
+    </select>
+    
+    <select class="form-create-page__select" name="opinion">
+      <option class="form-create-page__option">User Letter</option>
+  
+      <option class="form-create-page__option">
+        Please insert database to see output
+      </option>
+  
+    </select>
+    
+    <h5 class="heading-5 heading-5--green heading-5--create-page">
+      Full Database Output
+    </h5>
+  
+    <div class="form-create-page__table-read-page">
+     <!-- <thead> -->
+        <!-- <tr> -->
+          <p class="table-header table-header--1">Id</p>
+          <p class="table-header table-header--2">Full name</p>
+          <p class="table-header table-header--3">Email</p>
+          <p class="table-header table-header--4">Phone</p>
+          <p class="table-header table-header--5">Skills</p>
+          <p class="table-header table-header--6">Opinion</p>
+          <p class="table-header table-header--7">Developer</p>
+          <p class="table-header table-header--8">Letter</p>
+        <!-- </tr> -->
+     <!-- </thead> -->
 
-      <h5 class="heading-5 heading-5--green heading-5--story">
-        Space websites
-      </h5>
-
-      <p class="par par--green par--story">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At totam nam fugiat corrupti incidunt quisquam! Ipsa delectus, dignissimos accusamus eaque similique nulla voluptatum modi iusto fugiat obcaecati? Fugit, dolore possimus?
-      </p>
-    </div>
-
-    <div class="story__content">
-
-      <h5 class="heading-5 heading-5--green heading-5--story">
-        Space Templates
-      </h5>
+      <!-- <tbody> -->
+        <!-- <tr> -->
+          <!-- <td>Id</td> -->
       
-      <p class="par par--green par--story">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At totam nam fugiat corrupti incidunt quisquam! Ipsa delectus, dignissimos accusamus eaque similique nulla voluptatum modi iusto fugiat obcaecati? Fugit, dolore possimus?
-      </p>
+          <p class="table-data table-data--1">1</p>
+          <p class="table-data table-data--2">Milos Cemalovic</p>
+          <p class="table-data table-data--3">miloscemalovicnew@gmail.com</p>
+          <p class="table-data table-data--4">+38162327929</p>
+          <p class="table-data table-data--5">html5 cssgrid flexbox bem mvcoopphp sass</p>
+          <p class="table-data table-data--6">I would like to offer you a job</p>
+          <p class="table-data table-data--7">yes</p>
+          <p class="table-data table-data--8">This is impressive! Come work with me!</p>
+
+          <p class="table-data table-data--9">2</p>
+          <p class="table-data table-data--10">Please</p>
+          <p class="table-data table-data--11">insert</p>
+          <p class="table-data table-data--12">database</p>
+          <p class="table-data table-data--13">to</p>
+          <p class="table-data table-data--14">see</p>
+          <p class="table-data table-data--15">more</p>
+          <p class="table-data table-data--16">outputs</p>
+  
+        <!-- </tr> -->
+      <!-- </tbody> -->
+    <!-- </table> -->
+
     </div>
-  </section>
+    
+    <h4 id="downloads" class="heading-4 heading-4--green heading-4--create-page" style="grid-column:1/-1;">
+      <a class="heading-4 heading-4--green heading-4--create-page" href="create-page.html">Create more inputs</a>
+    </h4>
+    
+    <h5 class="heading-5 heading-5--green heading-5--create-page">
+      Are you a web developer?
+    </h5>
+    
+    <div class="form-create-page__radio-box">
+      <input type="radio" class="form-create-page__radio form-create-page__radio--1" id="radio-1" name="developer" value="yes">
+      <label for="radio-1" class="form-create-page__label form-create-page__label--radio">
+        <span class="form-create-page__label-span--radio"></span>
+        Yes
+      </label>
+      
+      <input type="radio" class="form-create-page__radio form-create-page__radio--2" id="radio-2" name="developer" value="no">
+      <label for="radio-2" class="form-create-page__label form-create-page__label--radio">
+        <span class="form-create-page__label-span--radio"></span>
+        No
+      </label>
+    </div>
+  
+    <h5 class="heading-5 heading-5--green heading-5--create-page">
+      Your message for me
+    </h5>
+  
+    <textarea class="form-create-page__textarea" name="letter" id="letter" cols="50" rows="10" placeholder="Please enter your message"></textarea>
+  
+    <button type="submit" class="btn btn--form-create-page" name="page" value="formreadpage">Submit</button>
+  
+    <h4 class="heading-4 heading-4--header" style="grid-column:1/-1;"> <?php if(isset($msg)) echo $msg ?> </h4>
+  
+  </form>
 
-  <img id="downloads" class="spaceweb-img" src="img/spaceweb-img.jpg" alt="Spaceweb image">
+  <section class="features__1 features__1--create-page"></section>
 
-  <section class="features__1"></section>
-
-  <section id="portfolio" class="features__2">   
+  <section id="portfolio" class="features__2 features__2--create-page">   
 
     <div class="features__content">
 
@@ -152,8 +269,7 @@
         <svg class="features__icon features__icon--1">
           <use xlink:href="img/sprite.svg#icon-lightbulb"></use>
         </svg>
-      </div>
-      
+      </div>     
 
       <h5 class="heading-5 heading-5--white heading-5--features">
         Idea
@@ -162,17 +278,15 @@
       <p class="par par--white par--features">
         If you like this project please contact me via social media for cooperation. You can download my CV as well. Hope to work together!
       </p>
-    </div>
-    
+    </div>      
 
     <div class="features__content">
 
-     <div class="features__box-icon features__box-icon--2">
+      <div class="features__box-icon features__box-icon--2">
         <svg class="features__icon features__icon--2">
           <use xlink:href="img/sprite.svg#icon-rocket"></use>
         </svg>
-     </div>
-      
+      </div>        
 
       <h5 class="heading-5 heading-5--white heading-5--features">
         Take off
@@ -181,8 +295,7 @@
       <p class="par par--white par--features">
         If you like this project please contact me via social media for cooperation. You can download my CV as well. Hope to work together!
       </p>
-    </div>
-    
+    </div>      
 
     <div class="features__content">
 
@@ -191,7 +304,6 @@
           <use xlink:href="img/sprite.svg#icon-presentation"></use>
         </svg>
       </div>
-      
 
       <h5 class="heading-5 heading-5--white heading-5--features">
         Hard work
@@ -200,19 +312,20 @@
       <p class="par par--white par--features">
         If you like this project please contact me via social media for cooperation. You can download my CV as well. Hope to work together!
       </p>
+
     </div>
   </section>
 
   <footer id="contact" class="footer__1"></footer>
 
-  <footer class="footer__2">
+  <footer class="footer__2 footer__2--create-page">
 
     <div class="social">
 
       <a class="social__link" href="https://www.linkedin.com/in/milo%C5%A1-%C4%87emalovi%C4%87-3a54423/" target="_blanc">
-         <svg class="social__icon social__icon--1">
-           <use xlink:href="img/sprite.svg#icon-linkedin"></use>
-         </svg>
+        <svg class="social__icon social__icon--1">
+          <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+        </svg>
       </a>
 
       <a class="social__link" href="https://github.com/MilosCemalovic" target="_blanc">
@@ -222,9 +335,9 @@
       </a>
 
       <a class="social__link" href="https://www.facebook.com/cemalovicmilos" target="_blanc">
-         <svg class="social__icon social__icon--3">
-           <use xlink:href="img/sprite.svg#icon-facebook"></use>
-         </svg>
+        <svg class="social__icon social__icon--3">
+          <use xlink:href="img/sprite.svg#icon-facebook"></use>
+        </svg>
       </a>
 
       <a class="social__link" href="https://www.instagram.com/naturally_dance/" target="_blanc">
@@ -323,16 +436,17 @@
   </footer>
 
 
-  <!-- show/hide hamburger Menu -->
+<!-- show/hide hamburger Menu -->
 
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 
-  <!-- Smooth scroll -->
-    
-  <script src="js/smooth-scroll.js"></script>
-  <script>
-    var scroll = new SmoothScroll('a[href*="#"]');
-  </script>
+<!-- Smooth scroll -->
   
+<script src="js/smooth-scroll.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+
 </body>
 </html>

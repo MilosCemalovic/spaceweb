@@ -22,6 +22,10 @@
   @media only screen and (max-width: $bp-6) {
     font-size: 6rem;
   }
+  
+  @media only screen and (max-width: $bp-7) {
+    font-size: 4rem;
+  }
 
   // &--header {
 
@@ -41,9 +45,13 @@
   @media only screen and (max-width: $bp-6) {
     font-size: 2rem;
   }
+  
+  @media only screen and (max-width: $bp-7) {
+    font-size: 1.5rem;
+  }
 
   // &--header {
-
+  
   // }
 }
 
@@ -63,6 +71,26 @@
   // &--story {
 
   // }
+
+  &--create-page {
+    grid-column: 1 / -1;
+    margin: 0;
+    margin-top: 2rem;
+    font-size: 4rem;
+    // align-self: center;
+
+    @media only screen and (max-width: $bp-3) {
+      font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-6) {
+      text-align: center;
+    }
+  
+    @media only screen and (max-width: $bp-7) {
+      font-size: 2rem;
+    }
+  }
 }
 
 .heading-6 {

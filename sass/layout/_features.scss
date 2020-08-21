@@ -16,6 +16,12 @@
       clip-path: polygon(44% 18%, 63% 13%, 100% 8%, 100% 85%, 0 100%, 0 22%);
       margin-top: -35rem;
     }
+
+    &--create-page {
+      margin-top: -25rem;
+      -webkit-clip-path: polygon(0 30%, 100% 30%, 100% 79%, 0 79%);
+      clip-path: polygon(0 30%, 100% 30%, 100% 79%, 0 79%);
+    }
   }
   
   &__2 {
@@ -31,6 +37,7 @@
 
     @media only screen and (max-width: $bp-6) {
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      margin: 35rem 0 30rem 0;
     }
   }
 

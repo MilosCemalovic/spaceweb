@@ -15,6 +15,8 @@
     // grid-template-rows: repeat(2, min-content);
     row-gap: 2rem;
     justify-items: center;
+    height: 2rem;
+    margin: 1rem 0;
   }
 
   &__list {
@@ -34,7 +36,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $color-grey-light-1;
-    font-weight: $fw-700;
+    font-weight: $fw-7;
 
     @media only screen and (max-width: $bp-3) {
       font-size: 1.2rem;

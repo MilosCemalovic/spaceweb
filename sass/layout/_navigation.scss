@@ -41,6 +41,7 @@
         grid-template-columns: max-content; 
         // background-color: $color-white;
         background-color: rgba($color-white, .65);
+        margin-left: -4rem;
       }
     }
   }
@@ -68,7 +69,7 @@
     &:visited {
       text-decoration: none;
       text-transform: uppercase;
-      font-weight: $fw-700;
+      font-weight: $fw-7;
       font-size: 1.5rem;
       color: inherit;
       display: grid;

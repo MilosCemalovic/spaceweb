@@ -1,20 +1,24 @@
 .btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border: none;
+    text-transform: uppercase;
+    background-color: $color-green-light;
+    color: $color-grey-light-1;
+    box-shadow: $bx-sw-2;
+    cursor: pointer;
+    transition: $transition-1;
 
-  padding: 1.5rem 3rem;
-  border: none;
-  text-transform: uppercase;
-  background-color: $color-green-light;
-  color: $color-grey-light-1;
-  box-shadow: $bx-sw-2;
-  cursor: pointer;
-  transition: $transition-1;
-
-  @media only screen and (max-width: $bp-3) {
-    padding: 1rem 2rem;
-  }
-
-  @media only screen and (max-width: $bp-6) {
-    font-size: 1.2rem;
+    @media only screen and (max-width: $bp-3) {
+      padding: 1rem 2rem;
+    }
+  
+    @media only screen and (max-width: $bp-6) {
+      font-size: 1.2rem;
+    }
   }
 
   &:hover,
@@ -28,12 +32,36 @@
   &:focus {
     box-shadow: $bx-sw-2;
     transform: scale(1);
+    outline: none;
   }
 
 
-  // &--header {
+  &--header {
 
-  // }
+    &-create-page {
+      font-weight: $fw-7;
+      font-size: 1.9rem;
+    }
+
+  }
+
+  &--form-create-page {
+    grid-column: 1 / -1;
+
+    &:hover,
+    &:active {
+      box-shadow: $bx-sw-3;
+      transform: scale(1.02);
+      border-radius: .3rem;
+      background-color: $color-tirquize-dark;
+      color: $color-grey-light-1;
+    }
+
+    &:focus {
+      box-shadow: $bx-sw-4;
+      transform: scale(1);
+    }
+  }
 
   
 }
@@ -48,6 +76,7 @@
 
   @media only screen and (max-width: $bp-6) {
     display: block;
+    margin-right: 1.5rem;
   }
 
   &__icon {
