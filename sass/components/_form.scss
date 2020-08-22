@@ -133,6 +133,7 @@
   
     @media only screen and (max-width: $bp-7) {
       width: 30rem;
+      margin: 0 3rem;
     }
   }
 
@@ -226,10 +227,11 @@
     opacity: 1;
   }
 
-  &__table-read-page {
+  &__table-read-page-1,
+  &__table-read-page-2,
+  &__table-read-page-3 {
     grid-column: 1/ -1;
     display: grid;
-    grid-template-columns: min-content max-content repeat(6, min-content);
     border: .1rem solid $color-green-light;
     border-radius: .5rem;
     overflow: hidden;
@@ -242,48 +244,6 @@
       padding: 1rem 1.5rem;
       display: grid;
       justify-items: center;
-
-      @media only screen and (max-width: $bp-5) {
-
-        // &--1 {
-
-        // }
-        
-        &--2 {
-          grid-column: 1 / 2;
-          grid-row: 2 / 3;
-        }
-        
-        &--3 {
-          grid-column: 1 / 2;
-          grid-row: 3 / 4;
-        }
-        
-        &--4 {
-          grid-column: 1 / 2;
-          grid-row: 4 / 5;
-        }
-        
-        &--5 {
-          grid-column: 1 / 2;
-          grid-row: 5 / 6;
-        }
-        
-        &--6 {
-          grid-column: 1 / 2;
-          grid-row: 6 / 7;
-        }
-        
-        &--7 {
-          grid-column: 1 / 2;
-          grid-row: 7 / 8;
-        }
-        
-        &--8 {
-          grid-column: 1 / 2;
-          grid-row: 8 / 9;
-        }
-      }
     }
 
     .table-data {
@@ -292,9 +252,65 @@
       border: .1rem solid $color-green-light;
       display: grid;
       justify-items: center;
+    }
+  }
 
-      @media only screen and (max-width: $bp-5) {
+  &__table-read-page-1 {
+    grid-template-columns: min-content max-content repeat(6, min-content);
+    @media only screen and (max-width: $bp-5) {
+      display: none;
+    }
+  }
 
+  &__table-read-page-2 {
+    display: none;
+
+    @media only screen and (max-width: $bp-5) {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      
+      .table-header {
+        // &--1 {
+
+        // }
+        
+        &--2 {
+          grid-column: 1 / 2;
+          grid-row: 2 / 3;
+        }
+        
+        &--3 {
+          grid-column: 1 / 2;
+          grid-row: 3 / 4;
+        }
+        
+        &--4 {
+          grid-column: 1 / 2;
+          grid-row: 4 / 5;
+        }
+        
+        &--5 {
+          grid-column: 1 / 2;
+          grid-row: 5 / 6;
+        }
+        
+        &--6 {
+          grid-column: 1 / 2;
+          grid-row: 6 / 7;
+        }
+        
+        &--7 {
+          grid-column: 1 / 2;
+          grid-row: 7 / 8;
+        }
+        
+        &--8 {
+          grid-column: 1 / 2;
+          grid-row: 8 / 9;
+        }
+      }
+
+      .table-data {
         // &--1 {
 
         // }
@@ -334,48 +350,64 @@
           grid-row: 8 / 9;
         }
         
-        &--9 {
-          grid-column: 3 / 4;
-          grid-row: 1 / 2;
-        }
+        // &--9 {
+        //   grid-column: 3 / 4;
+        //   grid-row: 1 / 2;
+        // }
         
-        &--10 {
-          grid-column: 3 / 4;
-          grid-row: 2 / 3;
-        }
+        // &--10 {
+        //   grid-column: 3 / 4;
+        //   grid-row: 2 / 3;
+        // }
         
-        &--11 {
-          grid-column: 3 / 4;
-          grid-row: 3 / 4;
-        }
+        // &--11 {
+        //   grid-column: 3 / 4;
+        //   grid-row: 3 / 4;
+        // }
         
-        &--12 {
-          grid-column: 3 / 4;
-          grid-row: 4 / 5;
-        }
+        // &--12 {
+        //   grid-column: 3 / 4;
+        //   grid-row: 4 / 5;
+        // }
         
-        &--13 {
-          grid-column: 3 / 4;
-          grid-row: 5 / 6;
-        }
+        // &--13 {
+        //   grid-column: 3 / 4;
+        //   grid-row: 5 / 6;
+        // }
         
-        &--14 {
-          grid-column: 3 / 4;
-          grid-row: 6 / 7;
-        }
+        // &--14 {
+        //   grid-column: 3 / 4;
+        //   grid-row: 6 / 7;
+        // }
         
-        &--15 {
-          grid-column: 3 / 4;
-          grid-row: 7 / 8;
-        }
+        // &--15 {
+        //   grid-column: 3 / 4;
+        //   grid-row: 7 / 8;
+        // }
         
-        &--16 {
-          grid-column: 3 / 4;
-          grid-row: 8 / 9;
-        }
-
+        // &--16 {
+        //   grid-column: 3 / 4;
+        //   grid-row: 8 / 9;
+        // }
       }
+
+
     }
+
   }
 
+  &__table-read-page-3 {
+    grid-template-columns: min-content max-content repeat(7, min-content);
+    // @media only screen and (max-width: $bp-5) {
+    //   display: none;
+    // }
+
+    .delete-user {
+      text-decoration: none;
+      align-self: center;
+      color: $color-orange-dark;
+      font-weight: $fw-7;
+    }
+  }
 }
+
