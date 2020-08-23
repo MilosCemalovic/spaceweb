@@ -38,6 +38,11 @@
   color: $color-green-light;
   margin-bottom: 5rem;
 
+  &__link:link,
+  &__link:visited {
+    color: inherit;
+  }
+
   @media only screen and (max-width: $bp-3) {
     font-size: 2.5rem;
   }
@@ -50,9 +55,9 @@
     font-size: 1.5rem;
   }
 
-  // &--header {
-  
-  // }
+  &--create-page {
+    grid-column: 1/-1;
+  }
 }
 
 .heading-5 {

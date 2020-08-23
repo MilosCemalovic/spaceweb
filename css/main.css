@@ -235,6 +235,10 @@ body {
   margin-bottom: 5rem;
 }
 
+.heading-4__link:link, .heading-4__link:visited {
+  color: inherit;
+}
+
 @media only screen and (max-width: 58.75em) {
   .heading-4 {
     font-size: 2.5rem;
@@ -251,6 +255,10 @@ body {
   .heading-4 {
     font-size: 1.5rem;
   }
+}
+
+.heading-4--create-page {
+  grid-column: 1/-1;
 }
 
 .heading-5 {
@@ -491,8 +499,7 @@ body {
 
 @media only screen and (max-width: 58.75em) {
   .form-create-page__input-box {
-    grid-template-columns: 1fr;
-    justify-self: stretch;
+    grid-template-columns: 40rem;
   }
 }
 
@@ -599,6 +606,10 @@ body {
   }
 }
 
+.form-create-page__input {
+  text-align: center;
+}
+
 .form-create-page__input, .form-create-page__textarea, .form-create-page__select {
   border: none;
   padding: 1.5rem 3rem;
@@ -646,55 +657,48 @@ body {
   justify-items: center;
 }
 
-.form-create-page__table-read-page-1 {
+.form-create-page__textarea {
+  width: 60rem;
+  height: 30rem;
+}
+
+@media only screen and (max-width: 51.5em) {
+  .form-create-page__textarea {
+    width: 40rem;
+    height: 20rem;
+  }
+}
+
+.form-create-page__table-read-page-1, .form-create-page__table-delete-page-1 {
   display: grid;
-  grid-template-columns: min-content max-content repeat(6, min-content);
 }
 
 @media only screen and (max-width: 58.75em) {
-  .form-create-page__table-read-page-1 {
+  .form-create-page__table-read-page-1, .form-create-page__table-delete-page-1 {
     display: none;
   }
 }
 
-.form-create-page__table-read-page-2 {
-  display: none;
-}
-
-.form-create-page__table-read-page-2 .table-box {
-  display: grid;
-}
-
-@media only screen and (max-width: 58.75em) {
-  .form-create-page__table-read-page-2 {
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-  }
+.form-create-page__table-read-page-1 {
+  grid-template-columns: max-content repeat(6, min-content);
 }
 
 .form-create-page__table-delete-page-1 {
-  display: grid;
-  grid-template-columns: min-content max-content repeat(7, min-content);
+  grid-template-columns: max-content repeat(7, min-content);
 }
 
-@media only screen and (max-width: 58.75em) {
-  .form-create-page__table-delete-page-1 {
-    display: none;
-  }
-}
-
-.form-create-page__table-delete-page-2 {
+.form-create-page__table-read-page-2, .form-create-page__table-delete-page-2 {
   display: none;
 }
 
-.form-create-page__table-delete-page-2 .table-box {
+.form-create-page__table-read-page-2 .table-box, .form-create-page__table-delete-page-2 .table-box {
   display: grid;
 }
 
 @media only screen and (max-width: 58.75em) {
-  .form-create-page__table-delete-page-2 {
+  .form-create-page__table-read-page-2, .form-create-page__table-delete-page-2 {
     display: grid;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: max-content 35rem;
   }
 }
 
@@ -836,8 +840,9 @@ body {
 
 @media only screen and (max-width: 40em) {
   .features__2 {
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    margin: 35rem 0 30rem 0;
+    grid-template-columns: 1fr;
+    margin: 45rem 10rem 30rem 10rem;
+    grid-gap: 7rem;
   }
 }
 

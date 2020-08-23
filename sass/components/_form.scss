@@ -90,8 +90,8 @@
     // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
     @media only screen and (max-width: $bp-3) {
-      grid-template-columns: 1fr;
-      justify-self: stretch;
+      grid-template-columns: 40rem;
+      // justify-self: center;
     }
   }
 
@@ -203,6 +203,10 @@
     
   }
 
+  &__input {
+    text-align: center;
+  }
+
   &__input,
   &__textarea,
   &__select {
@@ -298,39 +302,36 @@
     }
   }
 
-  &__table-read-page-1 {
-    display: grid;
-    grid-template-columns: min-content max-content repeat(6, min-content);
+  
+
+  &__textarea {
+    width: 60rem;
+    height: 30rem;
+
+    @media only screen and (max-width: $bp-5) {
+      width: 40rem;
+      height: 20rem;
+    }
+  }
+
+  &__table-read-page-1,
+  &__table-delete-page-1 {
+    display: grid;   
 
     @media only screen and (max-width: $bp-3) {
       display: none;
     }
   }
 
-  &__table-read-page-2 {
-    display: none;
-
-    .table-box {
-      display: grid;
-    }
-
-    @media only screen and (max-width: $bp-3) {
-      display: grid;
-      grid-template-columns: repeat(2, max-content);
-    }
-
+  &__table-read-page-1 {
+    grid-template-columns: max-content repeat(6, min-content);
   }
 
   &__table-delete-page-1 {
-    display: grid;
-    grid-template-columns: min-content max-content repeat(7, min-content);
-    
-    @media only screen and (max-width: $bp-3) {
-      display: none;
-    }
-
+    grid-template-columns: max-content repeat(7, min-content);
   }
 
+  &__table-read-page-2,
   &__table-delete-page-2 {
     display: none;
 
@@ -340,7 +341,7 @@
 
     @media only screen and (max-width: $bp-3) {
       display: grid;
-      grid-template-columns: repeat(2, max-content);
+      grid-template-columns: max-content 35rem;
     }
 
   }

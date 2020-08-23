@@ -37,8 +37,9 @@
     transition: $transition-2;
 
     @media only screen and (max-width: $bp-6) {
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-      margin: 35rem 0 30rem 0;
+      grid-template-columns: 1fr;
+      margin: 45rem 10rem 30rem 10rem;
+      grid-gap: 7rem;
     }
   }
 
