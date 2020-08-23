@@ -25,6 +25,10 @@ body {
   display: grid;
   grid-template-rows: 5rem calc(100vh - 5rem) repeat(4, min-content);
   grid-template-columns: [full-start] minmax(10rem, 1fr) [center-start] repeat(4, minmax(min-content, 25rem)) [center-end] minmax(10rem, 1fr) [full-end];
+
+  @media only screen and (max-width:$bp-2) {
+    grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(4, minmax(min-content, 25rem)) [center-end] minmax(5rem, 1fr) [full-end];
+  }
 }
 
 ::selection {
