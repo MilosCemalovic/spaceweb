@@ -142,7 +142,7 @@
 
 @keyframes moveInRight-2 {
   0% {
-    transform: translateX(300%) scale(1);
+    transform: translateX(450%) scale(1);
   }
   50% {
     transform: translateX(-10%) scale(1.4);
@@ -181,6 +181,7 @@ body {
   display: grid;
   grid-template-rows: 5rem calc(100vh - 5rem) repeat(4, min-content);
   grid-template-columns: [full-start] minmax(10rem, 1fr) [center-start] repeat(4, minmax(min-content, 25rem)) [center-end] minmax(10rem, 1fr) [full-end];
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 75em) {
@@ -749,6 +750,31 @@ body {
   color: #f7f7f7;
 }
 
+.from-right,
+.from-down {
+  opacity: 0;
+}
+
+.from-right.appear {
+  opacity: 1;
+  animation: moveInRight-2 5s 2s;
+  animation-fill-mode: backwards;
+}
+
+.from-down.appear {
+  opacity: 1;
+  animation: moveInBottom-2 5s 3s;
+}
+
+.on-off {
+  opacity: 0;
+}
+
+.on-off.appear {
+  opacity: 1;
+  animation: light-on-off 5s;
+}
+
 .social {
   grid-column: 1 / -1;
   justify-self: end;
@@ -858,27 +884,10 @@ body {
   transition: all 0.5s;
 }
 
-.features__box-icon--1 {
-  animation: light-on-off 5s infinite;
-}
-
-.features__box-icon--3 {
-  animation: moveInRight-2 5s 2s infinite;
-  animation-fill-mode: backwards;
-}
-
 .features__icon {
   width: 6rem;
   height: 6rem;
   fill: #61ccb0;
-}
-
-.features__icon--1 {
-  animation: light-on-off 5s infinite;
-}
-
-.features__icon--2 {
-  animation: moveInBottom-2 5s 2.5s infinite;
 }
 
 .footer__1 {

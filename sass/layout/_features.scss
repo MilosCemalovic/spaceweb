@@ -52,16 +52,14 @@
     margin-bottom: 3rem;
     transition: $transition-2;
 
-    &--1 {
-      // animation: light-on-off 3s;
-      animation: light-on-off 5s infinite;
-    }
+    // &--1 {
+    //   animation: light-on-off 5s;
+    // }
 
-    &--3 {
-      // animation: moveInRight-2 3s .5s;
-      animation: moveInRight-2 5s 2s infinite;
-      animation-fill-mode: backwards;
-    }
+    // &--3 {
+    //   animation: moveInRight-2 5s 2s infinite;
+    //   animation-fill-mode: backwards;
+    // }
   }
 
   &__icon {
@@ -69,15 +67,13 @@
     height: 6rem;
     fill: $color-green-light;
 
-    &--1 {
-      // animation: light-on-off 3s;
-      animation: light-on-off 5s infinite;
-    }
+    // &--1 {
+    //   animation: light-on-off 5s;
+    // }
 
-    &--2 {
-      // animation: moveInBottom-2 1.5s 2.5s;
-      animation: moveInBottom-2 5s 2.5s infinite;
-    }
+    // &--2 {
+    //   animation: moveInBottom-2 5s 2.5s infinite;
+    // }
   }
 }
 

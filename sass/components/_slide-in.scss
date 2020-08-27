@@ -1,0 +1,66 @@
+// .from-left,
+.from-right,
+// .from-up,
+.from-down {
+  opacity: 0;
+  // transition: $transition-3;
+}
+
+// .from-left.appear,
+.from-right.appear {
+  // transform: translateX(0);
+  // transition: all 3s;
+  opacity: 1;
+  animation: moveInRight-2 5s 2s;
+  animation-fill-mode: backwards;
+}
+
+// .from-up.appear,
+.from-down.appear {
+  // transform: translateY(0);
+  // transition: all 1.5s 1s;
+  opacity: 1;
+  animation: moveInBottom-2 5s 3s;
+  // animation-fill-mode: backwards;
+}
+
+.on-off {
+  opacity: 0;
+}
+
+.on-off.appear {
+  opacity: 1;
+  animation: light-on-off 5s;
+  // transition: all 2s ease-in-out;
+}
+
+// .from-left {
+//   transform: translateX(-100%);
+// }
+
+// .from-right {
+//   transform: translateX(100%);
+// }
+
+// .from-up {
+//   transform: translateY(-350%);
+// }
+
+// .from-down {
+//   transform: translateY(50%);
+// }
+
+// .to-out {
+//   backdrop-filter: blur(10px);
+//   transform: scale(2);
+//   transition: transform .5s ease-in;
+
+//   @media only screen and (max-width: $bp-6) {
+//     transform: scale(1.2);
+//   }
+// }
+
+// .to-out.appear {
+//   backdrop-filter: none;
+//   transform: scale(1);
+// }
