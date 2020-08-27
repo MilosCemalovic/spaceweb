@@ -1,2 +1,3 @@
 # spaceweb
-BEM Architecture, HTML &amp; CSS, CSS GRID, SASS and bit of JS - single page web template - CRUD is yet to come 
+BEM Architecture, HTML5, CSS GRID, CSS Flexbox, SASS, Intersection Observer, Smooth Scroll and promo Create, Read, Update & Delete pages. 
+MVC OOP PhP version is coming soon.
