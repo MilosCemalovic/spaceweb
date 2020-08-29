@@ -5,6 +5,12 @@
   grid-template-columns: repeat(5, min-content);
   grid-gap: 2rem;
 
+  @media only screen and (max-width: $bp-6) {
+    // justify-self: center;
+    margin-top: 5rem;
+    margin-left: -4rem;
+  }
+
   &__link {
     @include hover-active-up;
   }

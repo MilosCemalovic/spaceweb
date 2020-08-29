@@ -8,20 +8,30 @@
     margin-top: -45rem;
 
     @media only screen and (max-width: $bp-5) {
-      margin-top: -30rem;
+      -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+      margin-top: 0;
+      // margin-top: -30rem;
     }
 
-    @media only screen and (max-width: $bp-6) {
-      -webkit-clip-path: polygon(44% 18%, 63% 13%, 100% 8%, 100% 85%, 0 100%, 0 22%);
-      clip-path: polygon(44% 18%, 63% 13%, 100% 8%, 100% 85%, 0 100%, 0 22%);
-      margin-top: -35rem;
-      margin-bottom: -5rem;
-    }
+    // @media only screen and (max-width: $bp-6) {
+    //   -webkit-clip-path: polygon(44% 18%, 63% 13%, 100% 8%, 100% 85%, 0 100%, 0 22%);
+    //   clip-path: polygon(44% 18%, 63% 13%, 100% 8%, 100% 85%, 0 100%, 0 22%);
+    //   margin-top: -35rem;
+    //   margin-bottom: -5rem;
+    // }
+    
 
     &--create-page {
-      margin-top: -25rem;
+      margin-top: 0;
       -webkit-clip-path: polygon(0 30%, 100% 30%, 100% 79%, 0 79%);
       clip-path: polygon(0 30%, 100% 30%, 100% 79%, 0 79%);
+
+      @media only screen and (max-width:$bp-3) {
+        -webkit-clip-path: none;
+        clip-path: none;
+      }
+       
     }
   }
   
@@ -36,10 +46,29 @@
     padding-bottom: 15rem;
     transition: $transition-2;
 
-    @media only screen and (max-width: $bp-6) {
-      grid-template-columns: 1fr;
-      margin: 45rem 10rem 30rem 10rem;
+    @media only screen and (max-width: $bp-5) {
+      grid-template-columns: 30rem;
+      justify-content: center;
+      padding-bottom: 0;
       grid-gap: 7rem;
+      margin: 10rem 0;
+    }
+
+    &--create-page {
+      background-color: $color-green-light;
+      grid-column: full-start / full-end;
+      padding: 10rem;
+      margin: 0;
+      // margin-bottom: 5rem;
+    }
+  }
+
+  &__content {
+
+    display: grid;
+
+    @media only screen and (max-width: $bp-7) {
+      justify-items: center;
     }
   }
 
@@ -51,52 +80,11 @@
     @include grid-center-1;
     margin-bottom: 3rem;
     transition: $transition-2;
-
-    // &--1 {
-    //   animation: light-on-off 5s;
-    // }
-
-    // &--3 {
-    //   animation: moveInRight-2 5s 2s infinite;
-    //   animation-fill-mode: backwards;
-    // }
   }
 
   &__icon {
     width: 6rem;
     height: 6rem;
     fill: $color-green-light;
-
-    // &--1 {
-    //   animation: light-on-off 5s;
-    // }
-
-    // &--2 {
-    //   animation: moveInBottom-2 5s 2.5s infinite;
-    // }
   }
 }
-
-
-// .features__2:hover .features__content .features__box-icon {
-
-//   &--1 {
-//     animation: light-on-off 3s;
-//   }
-
-//   &--3 {
-//     animation: moveInRight-2 3s .5s;
-//     animation-fill-mode: backwards;
-//   }
-// }
-
-// .features__2:hover .features__content .features__box-icon--1 .features__icon--1 {
-
-//   &--1 {
-//     animation: light-on-off 3s;
-//   }
-
-//   &--2 {
-//     animation: moveInBottom-2 1.5s 2.5s;
-//   }
-// }

@@ -30,6 +30,14 @@ body {
   @media only screen and (max-width:$bp-2) {
     grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(4, minmax(min-content, 25rem)) [center-end] minmax(5rem, 1fr) [full-end];
   }
+
+  @media only screen and (max-width:$bp-3) {
+    grid-template-rows: 5rem 55rem repeat(4, min-content);
+  }
+
+  @media only screen and (max-width: $bp-7) {
+    grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(4, minmax(min-content, 25rem)) [center-end] minmax(3rem, 1fr) [full-end];
+  }
 }
 
 ::selection {

@@ -9,4 +9,13 @@
   &--white {
     color: $color-grey-light-1;
   }
+
+  &--features{
+  
+    @media only screen and (max-width: $bp-7) {
+      width: 20rem;
+      text-align: center;
+    }
+  }
+
 }

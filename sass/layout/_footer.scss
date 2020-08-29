@@ -3,10 +3,18 @@
     background-color: $color-green-dark;
     grid-column: full-start / full-end;
     grid-row: 6 / 7;
-    margin-top: -45vh;
+    margin-top: -20rem;
 
-    @media only screen and (max-width:$bp-2) {
-      margin-top: -55vh;
+    // @media only screen and (max-width:$bp-2) {
+    //   margin-top: -55vh;
+    // }
+
+    @media only screen and (max-width:$bp-5) {
+      margin-top: -.2rem;
+    }
+
+    &--create-page {
+      margin: 0;
     }
   }
   
@@ -23,17 +31,25 @@
       margin-top: -10rem;
     }
 
+    @media only screen and (max-width:$bp-5) {
+      margin-top: 10rem;
+    }
+
     @media only screen and (max-width: $bp-6) {
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); 
+      grid-template-columns: 1fr;
       justify-items: center;
+      margin: 0;
     }
 
-    &--create-page {  
+    &--create-page {
+      padding-top: 5rem;
 
-      @media only screen and (max-width: $bp-6) {
-        margin-top: -30rem;
-      }   
+      @media only screen and (max-width:$bp-2) {
+        margin-top: 0;
+      }
+
     }
+
   }
 
   &__content {
@@ -42,9 +58,10 @@
     row-gap: 2rem;
 
     @media only screen and (max-width: $bp-6) {
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      // grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
       grid-gap: 3rem;
       width: 50%;
+      margin-top: 5rem;
     }
   }
 
