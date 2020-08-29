@@ -552,6 +552,12 @@ body {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 30.25em) {
+  .form-create-page__select {
+    text-align: center;
+  }
+}
+
 .form-create-page__option {
   font-weight: 700;
   text-transform: capitalize;
