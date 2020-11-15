@@ -325,6 +325,10 @@ body {
   margin: 15rem 0;
 }
 
+.mb-md {
+  margin-bottom: 2rem;
+}
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   padding: 1.5rem 3rem;
